@@ -1,0 +1,583 @@
+text,label
+¿Dónde hay parqueaderos disponibles?,cm1
+¿Hay parqueo libre?,cm1
+Quiero saber si hay espacio para estacionar,cm1
+¿Hay algún lugar vacío?,cm1
+Parqueo disponible por favor,cm1
+¿Qué zonas tienen parqueo libre?,cm2
+Muéstrame las zonas disponibles,cm2
+¿Dónde hay zonas con espacio?,cm2
+Zonas con parqueadero por favor,cm2
+Quiero ver las zonas con parqueo,cm2
+Repite eso,cm3
+¿Puedes repetir?,cm3
+No entendí,cm3
+¿Me lo puedes decir otra vez?,cm3
+Repítelo por favor,cm3
+¿Está libre el parqueadero 3?,cm4
+Parqueadero 5 está ocupado?,cm4
+¿El parqueo número 10 está disponible?,cm4
+Quiero saber si el espacio 7 está libre,cm4
+¿El 12 está vacío?,cm4
+¿Hay parqueo en zona C?,cm5
+Parqueo disponible en zona H,cm5
+¿Zona D tiene espacios libres?,cm5
+Necesito estacionar en la zona G,cm5
+Quiero saber si puedo parquear en zona B,cm5
+¿Dónde está el parqueadero 3?,cm6
+¿A qué zona pertenece el parqueo 5?,cm6
+"""El parqueadero 10"," ¿de qué zona es?"",cm6"
+Ubicación del parqueadero 2,cm6
+¿Zona del espacio 1?,cm6
+Hola,cm7
+Buenos días,cm7
+Buenas tardes,cm7
+Qué tal,cm7
+Hey,cm7
+Necesito ayuda,cm8
+¿Qué puedes hacer?,cm8
+Muéstrame el menú,cm8
+Ayúdame por favor,cm8
+Información disponible,cm8
+asdfgh,cm9
+¿puede ruedas escoba?,cm9
+no tiene sentido esto,cm9
+eh?,cm9
+???,cm9
+¿Qué franjas hay en zona G?,cm10
+Muéstrame las franjas de la zona D,cm10
+Franjas disponibles en zona C,cm10
+¿Cuáles son las líneas en zona B?,cm10
+Necesito ver secciones en zona H,cm10
+Parqueaderos disponibles en franja 1 de zona C,cm11
+¿Hay espacios en franja 2 de la zona G?,cm11
+Muéstrame parqueos en franja 3 zona D,cm11
+Necesito un lugar en la sección 4 de zona H,cm11
+Franja 5 en zona B tiene parqueos?,cm11
+¿Dónde hay parqueaderos disponibles?,cm1
+Muéstrame parqueos libres por favor,cm1
+¿Qué espacios están libres?,cm1
+¿Hay parqueaderos disponibles en general?,cm1
+¿Qué zonas tienen parqueaderos libres?,cm2
+¿En qué zonas puedo parquear?,cm2
+Dime las zonas donde hay parqueo,cm2
+Repite la información anterior,cm3
+No entendí," repítelo por favor,cm3"
+¿Puedes repetir eso?,cm3
+¿Está disponible el parqueadero G1-03?,cm4
+¿El G1-10 está libre?,cm4
+Quiero saber si el parqueadero C2-05 está ocupado,cm4
+¿Qué parqueaderos hay en la zona G?,cm5
+Dime los parqueos disponibles en la zona B,cm5
+¿Hay espacio en la zona C?,cm5
+¿Dónde queda el parqueadero G1-12?,cm6
+¿A qué zona pertenece G2-01?,cm6
+Ubicación del parqueadero G1-03,cm6
+Hola," necesito ayuda,cm7"
+Buenos días,cm7
+Hola," ¿qué puedes hacer?,cm7"
+Ayuda por favor,cm8
+¿Qué puedes hacer?,cm8
+Muéstrame el menú de opciones,cm8
+asdfasdfasfsadf,cm9
+xjsakldjashdjas,cm9
+askdj123!¿?,cm9
+¿Que franjas hay en la zona B?,cm10
+Muéstrame las franjas de la zona C,cm10
+¿Qué líneas tiene la zona G?,cm10
+¿Hay parqueaderos libres en la zona B franja 1?,cm11
+Muéstrame los parqueaderos en zona C franja 2,cm11
+¿Parqueos disponibles en zona D franja 3?,cm11
+Muéstrame los espacios libres,cm1
+Información por favor,cm8
+¿Lo puedes repetir?,cm3
+Opciones disponibles,cm8
+Repite la última información,cm3
+¿Qué dijiste antes?,cm3
+¿Qué franjas hay en la zona B?,cm10
+Buenas tardes,cm7
+¿Está disponible el parqueadero G1-05?,cm4
+Consulta el estado del parqueadero G1-01,cm4
+Muéstrame el menú,cm8
+Dime la zona del parqueadero H1-03,cm6
+Dime si el G1-03 está ocupado,cm4
+Nonsense input,cm9
+Parqueaderos disponibles en zona C,cm5
+Muestra parqueos en la zona D,cm5
+¿Qué líneas hay en la zona D?,cm10
+¿A qué zona pertenece G1-03?,cm6
+¿Qué zonas tienen parqueo disponible?,cm2
+¿Qué parqueaderos hay disponibles en la zona G franja 1?,cm11
+¿Dónde puedo estacionar?,cm1
+¿Dónde hay parqueo libre?,cm2
+Hola,cm7
+Zona H franja 3 tiene parqueos libres?,cm11
+bzbzbz,cm9
+"""Zona G"," ¿qué parqueaderos hay?"",cm5"
+Dime los disponibles en la zona H,cm5
+Lista de franjas para la zona C,cm10
+¿Qué parqueaderos hay disponibles en la zona B?,cm5
+"""No entendí"," repítelo"",cm3"
+¿Qué puedes hacer?,cm8
+Franjas disponibles en zona H,cm10
+¿Qué tal?,cm7
+¿Hay parqueaderos disponibles?,cm1
+Dime los espacios libres en zona B franja 2,cm11
+¿Existen lugares disponibles para parquear?,cm1
+Buenos días,cm7
+¿¿¿???,cm9
+¿En qué zonas puedo encontrar parqueaderos?,cm2
+Random texto,cm9
+Puedes repetir por favor,cm3
+¿El parqueadero B2-10 está libre?,cm4
+Necesito un parqueadero libre,cm1
+¿En qué zona está el parqueadero C2-01?,cm6
+Disponibilidad en zona D franja 1,cm11
+asdadadas,cm9
+"""Hola"," sistema"",cm7"
+Dime las zonas con parqueaderos libres,cm2
+Zonas con espacios disponibles,cm2
+Muéstrame las franjas de la zona G,cm10
+Ayuda,cm8
+Muestra parqueos en zona C franja 2,cm11
+¿Está libre el parqueadero C3-02?,cm4
+Ubicación del parqueadero B1-02,cm6
+¿Dónde está ubicado el parqueadero G1-04?,cm6
+"""Zona Z"," disponibilidad"",cm5"
+Repetición del mensaje anterior,cm3
+Muéstrame parqueaderos disponibles ahora,cm1
+"""En la zona G"," ¿cuáles son las franjas?"",cm10"
+Zona D franjas,cm10
+Repetir información anterior,cm3
+Verificar disponibilidad de parqueaderos,cm1
+¿Dónde puedo encontrar zona con parqueo?,cm2
+"""Hola"," ¿quién eres?"",cm7"
+Zona A parqueo disponible,cm5
+¿Qué zonas tienen disponibilidad?,cm2
+¿Puedes repetir eso?,cm3
+¿Dónde pertenece G2-10?,cm6
+ghjkllkjhgfd,cm9
+Saludos,cm7
+¿???,cm9
+palabras aleatorias,cm9
+Guía de comandos,cm8
+Muéstrame las divisiones de zona C,cm10
+¿Dónde está ubicado el G2-08?,cm6
+"""Hola"," asistente de parqueaderos"",cm7"
+"""Hola"," estoy buscando parqueo"",cm7"
+¿Está libre el espacio D2-05?,cm4
+Opciones del sistema,cm8
+Dime las áreas con parqueaderos libres,cm2
+Quiero parqueo en zona B franja 2,cm11
+Explícame qué puedo preguntar,cm8
+Lista de funcionalidades,cm8
+Consulta zona para parqueadero Z1-01,cm6
+Dime si B1-01 está ocupado,cm4
+Zonas con estacionamiento libre,cm2
+Revisa estado del parqueadero G2-01,cm4
+¿G3-04 está disponible para parquear?,cm4
+texto sin sentido,cm9
+Mostrar zonas donde hay parqueos libres,cm2
+¿Algún sitio libre para estacionar?,cm1
+Franja 1 zona C disponible?,cm11
+"""No entendí"," ¿lo repites?"",cm3"
+Repite lo que dijiste,cm3
+Saber zona de parqueadero D1-03,cm6
+Consulta zonas con parqueaderos disponibles,cm2
+¿Qué opciones tengo?,cm8
+¿Cómo puedes ayudarme?,cm8
+sadjkshdkjhs,cm9
+Dime si hay algún parqueo disponible,cm1
+Revisar zona H por parqueaderos,cm5
+"""Qué tal"," necesito ayuda"",cm7"
+Menú principal,cm8
+¿A qué zona corresponde H1-02?,cm6
+Hola servicio de parqueo,cm7
+Ubicación y zona del espacio F1-06,cm6
+¿Dónde queda el parqueadero A1-01?,cm6
+¿Hay lugares disponibles para aparcar?,cm1
+¿Qué zona contiene B3-02?,cm6
+Parqueaderos libres en zona D,cm5
+¿Zona F franja 3 tiene parqueo libre?,cm11
+Dime si puedo usar el parqueadero B2-01,cm4
+¿Está habilitado el parqueadero Z2-06?,cm4
+Franja 2 de zona B tiene lugares libres?,cm11
+Dame las instrucciones,cm8
+Zonas y sus franjas disponibles,cm10
+Zona G tiene parqueo libre?,cm5
+Zonas con lugares de estacionamiento,cm2
+¿Qué bloques tienen parqueaderos libres?,cm2
+¿Está habilitado el lugar G2-10?,cm4
+Estoy buscando un parqueadero,cm1
+¿Qué carriles hay en zona F?,cm10
+¿Qué parqueaderos están libres en zona H franja 3?,cm11
+Consulta líneas de zona B,cm10
+Hola asistente,cm7
+Consulta general de parqueaderos disponibles,cm1
+Listar secciones de zona C,cm10
+Consulta parqueaderos en zona A,cm5
+Disponibilidad de parqueaderos en zona Z,cm5
+xyz no tiene sentido,cm9
+???!!!,cm9
+asdfghjkl,cm9
+Parqueaderos disponibles en zona D franja 2,cm11
+¿Qué zonas tienen espacios libres?,cm2
+Muéstrame parqueo por zona C,cm5
+Quiero saber qué hacer,cm8
+Verifica si el parqueadero C1-02 está libre,cm4
+Quiero saber si hay parqueo libre,cm1
+Ver secciones de la zona G,cm10
+Necesito un lugar para estacionar,cm1
+¿Dónde puedo encontrar parqueo libre?,cm1
+"""Hey"," ¿me puedes ayudar?"",cm7"
+Mostrar parqueaderos en zona Z franja 4,cm11
+¿Repetir el mensaje?,cm3
+Listar zonas disponibles para parquear,cm2
+¿Podrías decirlo de nuevo?,cm3
+Ubicación de C2-01,cm6
+Repite por favor lo último,cm3
+¿Parqueadero H3-10 disponible?,cm4
+Información general,cm8
+Consulta espacios en zona G franja 1,cm11
+Consulta disponibilidad de A1-01,cm4
+Parqueadero A1-01 pertenece a qué zona,cm6
+"""No comprendí"," repite"",cm3"
+comando desconocido,cm9
+¿Qué parqueaderos tiene la zona F?,cm5
+Buenos días sistema,cm7
+Espacios en zona F,cm5
+Parqueo disponible zona D franja 1,cm11
+Dímelo otra vez,cm3
+Buenas noches,cm7
+¿Qué secciones tiene zona B?,cm10
+Quiero ver franjas en zona H,cm10
+Revisa parqueo zona A franja 3,cm11
+##$%%^^&*,cm9
+"""Zona Z"," disponibilidad"",cm5"
+Repetición del mensaje anterior,cm3
+Muéstrame parqueaderos disponibles ahora,cm1
+"""En la zona G"," ¿cuáles son las franjas?"",cm10"
+Zona D franjas,cm10
+Repetir información anterior,cm3
+Verificar disponibilidad de parqueaderos,cm1
+¿Dónde puedo encontrar zona con parqueo?,cm2
+"""Hola"," ¿quién eres?"",cm7"
+Zona A parqueo disponible,cm5
+¿Qué zonas tienen disponibilidad?,cm2
+¿Puedes repetir eso?,cm3
+¿Dónde pertenece G2-10?,cm6
+ghjkllkjhgfd,cm9
+Saludos,cm7
+¿???,cm9
+palabras aleatorias,cm9
+Guía de comandos,cm8
+Muéstrame las divisiones de zona C,cm10
+¿Dónde está ubicado el G2-08?,cm6
+"""Hola"," asistente de parqueaderos"",cm7"
+"""Hola"," estoy buscando parqueo"",cm7"
+¿Está libre el espacio D2-05?,cm4
+Opciones del sistema,cm8
+Dime las áreas con parqueaderos libres,cm2
+Quiero parqueo en zona B franja 2,cm11
+Explícame qué puedo preguntar,cm8
+Lista de funcionalidades,cm8
+Consulta zona para parqueadero Z1-01,cm6
+Dime si B1-01 está ocupado,cm4
+Zonas con estacionamiento libre,cm2
+Revisa estado del parqueadero G2-01,cm4
+¿G3-04 está disponible para parquear?,cm4
+texto sin sentido,cm9
+Mostrar zonas donde hay parqueos libres,cm2
+¿Algún sitio libre para estacionar?,cm1
+Franja 1 zona C disponible?,cm11
+"""No entendí"," ¿lo repites?"",cm3"
+Repite lo que dijiste,cm3
+Saber zona de parqueadero D1-03,cm6
+Consulta zonas con parqueaderos disponibles,cm2
+¿Qué opciones tengo?,cm8
+¿Cómo puedes ayudarme?,cm8
+sadjkshdkjhs,cm9
+Dime si hay algún parqueo disponible,cm1
+Revisar zona H por parqueaderos,cm5
+"""Qué tal"," necesito ayuda"",cm7"
+Menú principal,cm8
+¿A qué zona corresponde H1-02?,cm6
+Hola servicio de parqueo,cm7
+Ubicación y zona del espacio F1-06,cm6
+¿Dónde queda el parqueadero A1-01?,cm6
+¿Hay lugares disponibles para aparcar?,cm1
+¿Qué zona contiene B3-02?,cm6
+Parqueaderos libres en zona D,cm5
+¿Zona F franja 3 tiene parqueo libre?,cm11
+Dime si puedo usar el parqueadero B2-01,cm4
+¿Está habilitado el parqueadero Z2-06?,cm4
+Franja 2 de zona B tiene lugares libres?,cm11
+Dame las instrucciones,cm8
+Zonas y sus franjas disponibles,cm10
+Zona G tiene parqueo libre?,cm5
+Zonas con lugares de estacionamiento,cm2
+¿Qué bloques tienen parqueaderos libres?,cm2
+¿Está habilitado el lugar G2-10?,cm4
+Estoy buscando un parqueadero,cm1
+¿Qué carriles hay en zona F?,cm10
+¿Qué parqueaderos están libres en zona H franja 3?,cm11
+Consulta líneas de zona B,cm10
+Hola asistente,cm7
+Consulta general de parqueaderos disponibles,cm1
+Listar secciones de zona C,cm10
+Consulta parqueaderos en zona A,cm5
+Disponibilidad de parqueaderos en zona Z,cm5
+xyz no tiene sentido,cm9
+???!!!,cm9
+asdfghjkl,cm9
+Parqueaderos disponibles en zona D franja 2,cm11
+¿Qué zonas tienen espacios libres?,cm2
+Muéstrame parqueo por zona C,cm5
+Quiero saber qué hacer,cm8
+Verifica si el parqueadero C1-02 está libre,cm4
+Quiero saber si hay parqueo libre,cm1
+Ver secciones de la zona G,cm10
+Necesito un lugar para estacionar,cm1
+¿Dónde puedo encontrar parqueo libre?,cm1
+Mostrar parqueaderos en zona Z franja 4,cm11
+¿Repetir el mensaje?,cm3
+Listar zonas disponibles para parquear,cm2
+¿Podrías decirlo de nuevo?,cm3
+Ubicación de C2-01,cm6
+Repite por favor lo último,cm3
+¿Parqueadero H3-10 disponible?,cm4
+Información general,cm8
+Consulta espacios en zona G franja 1,cm11
+Consulta disponibilidad de A1-01,cm4
+Parqueadero A1-01 pertenece a qué zona,cm6
+"""No comprendí"," repite"",cm3"
+comando desconocido,cm9
+¿Qué parqueaderos tiene la zona F?,cm5
+Buenos días sistema,cm7
+Espacios en zona F,cm5
+Parqueo disponible zona D franja 1,cm11
+Dímelo otra vez,cm3
+Buenas noches,cm7
+¿Qué secciones tiene zona B?,cm10
+Quiero ver franjas en zona H,cm10
+Revisa parqueo zona A franja 3,cm11
+¿Dónde hay parqueaderos disponibles ahora? (1),cm1
+Muéstrame algunos parqueos libres por favor (2),cm1
+Hay algún lugar para estacionar cerca? (3),cm1
+Quisiera saber si hay espacio para parquear (4),cm1
+Dime si hay parqueaderos vacíos (5),cm1
+¿Dónde hay parqueaderos disponibles ahora? (6),cm1
+Muéstrame algunos parqueos libres por favor (7),cm1
+Hay algún lugar para estacionar cerca? (8),cm1
+Quisiera saber si hay espacio para parquear (9),cm1
+Dime si hay parqueaderos vacíos (10),cm1
+¿Dónde hay parqueaderos disponibles ahora? (11),cm1
+Muéstrame algunos parqueos libres por favor (12),cm1
+Hay algún lugar para estacionar cerca? (13),cm1
+Quisiera saber si hay espacio para parquear (14),cm1
+Dime si hay parqueaderos vacíos (15),cm1
+¿Dónde hay parqueaderos disponibles ahora? (16),cm1
+Muéstrame algunos parqueos libres por favor (17),cm1
+Hay algún lugar para estacionar cerca? (18),cm1
+Quisiera saber si hay espacio para parquear (19),cm1
+Dime si hay parqueaderos vacíos (20),cm1
+Qué zonas tienen parqueaderos disponibles? (1),cm2
+En qué áreas puedo encontrar parqueo? (2),cm2
+Zonas con parqueos libres por favor (3),cm2
+Dame las zonas con lugares vacíos (4),cm2
+Zonas donde haya disponibilidad para estacionar (5),cm2
+Qué zonas tienen parqueaderos disponibles? (6),cm2
+En qué áreas puedo encontrar parqueo? (7),cm2
+Zonas con parqueos libres por favor (8),cm2
+Dame las zonas con lugares vacíos (9),cm2
+Zonas donde haya disponibilidad para estacionar (10),cm2
+Qué zonas tienen parqueaderos disponibles? (11),cm2
+En qué áreas puedo encontrar parqueo? (12),cm2
+Zonas con parqueos libres por favor (13),cm2
+Dame las zonas con lugares vacíos (14),cm2
+Zonas donde haya disponibilidad para estacionar (15),cm2
+Qué zonas tienen parqueaderos disponibles? (16),cm2
+En qué áreas puedo encontrar parqueo? (17),cm2
+Zonas con parqueos libres por favor (18),cm2
+Dame las zonas con lugares vacíos (19),cm2
+Zonas donde haya disponibilidad para estacionar (20),cm2
+Repite la información anterior (1),cm3
+"""No entendí"," podrías repetir? (2)"",cm3"
+¿Puedes decirlo de nuevo? (3),cm3
+Repetí lo que dijiste (4),cm3
+Explícame otra vez por favor (5),cm3
+Repite la información anterior (6),cm3
+"""No entendí"," podrías repetir? (7)"",cm3"
+¿Puedes decirlo de nuevo? (8),cm3
+Repetí lo que dijiste (9),cm3
+Explícame otra vez por favor (10),cm3
+Repite la información anterior (11),cm3
+"""No entendí"," podrías repetir? (12)"",cm3"
+¿Puedes decirlo de nuevo? (13),cm3
+Repetí lo que dijiste (14),cm3
+Explícame otra vez por favor (15),cm3
+Repite la información anterior (16),cm3
+"""No entendí"," podrías repetir? (17)"",cm3"
+¿Puedes decirlo de nuevo? (18),cm3
+Repetí lo que dijiste (19),cm3
+Explícame otra vez por favor (20),cm3
+El parqueadero G1-05 está libre? (1),cm4
+Está ocupado el parqueadero G1-01? (2),cm4
+Quiero saber si G1-13 está disponible (3),cm4
+¿Qué estado tiene el parqueo G1-09? (4),cm4
+Está libre el G1-02? (5),cm4
+El parqueadero G1-05 está libre? (6),cm4
+Está ocupado el parqueadero G1-01? (7),cm4
+Quiero saber si G1-13 está disponible (8),cm4
+¿Qué estado tiene el parqueo G1-09? (9),cm4
+Está libre el G1-02? (10),cm4
+El parqueadero G1-05 está libre? (11),cm4
+Está ocupado el parqueadero G1-01? (12),cm4
+Quiero saber si G1-13 está disponible (13),cm4
+¿Qué estado tiene el parqueo G1-09? (14),cm4
+Está libre el G1-02? (15),cm4
+El parqueadero G1-05 está libre? (16),cm4
+Está ocupado el parqueadero G1-01? (17),cm4
+Quiero saber si G1-13 está disponible (18),cm4
+¿Qué estado tiene el parqueo G1-09? (19),cm4
+Está libre el G1-02? (20),cm4
+Dame parqueaderos libres en la zona C (1),cm5
+Quiero saber si hay lugares en la zona D (2),cm5
+Zona H tiene parqueos? (3),cm5
+Parqueaderos disponibles en zona B (4),cm5
+Muéstrame lugares en la zona G (5),cm5
+Dame parqueaderos libres en la zona C (6),cm5
+Quiero saber si hay lugares en la zona D (7),cm5
+Zona H tiene parqueos? (8),cm5
+Parqueaderos disponibles en zona B (9),cm5
+Muéstrame lugares en la zona G (10),cm5
+Dame parqueaderos libres en la zona C (11),cm5
+Quiero saber si hay lugares en la zona D (12),cm5
+Zona H tiene parqueos? (13),cm5
+Parqueaderos disponibles en zona B (14),cm5
+Muéstrame lugares en la zona G (15),cm5
+Dame parqueaderos libres en la zona C (16),cm5
+Quiero saber si hay lugares en la zona D (17),cm5
+Zona H tiene parqueos? (18),cm5
+Parqueaderos disponibles en zona B (19),cm5
+Muéstrame lugares en la zona G (20),cm5
+¿Dónde está el parqueadero G1-03? (1),cm6
+A qué zona pertenece G1-12? (2),cm6
+Ubicación del parqueo G1-08 (3),cm6
+En qué zona está G1-10? (4),cm6
+Dime la franja del G1-07 (5),cm6
+¿Dónde está el parqueadero G1-03? (6),cm6
+A qué zona pertenece G1-12? (7),cm6
+Ubicación del parqueo G1-08 (8),cm6
+En qué zona está G1-10? (9),cm6
+Dime la franja del G1-07 (10),cm6
+¿Dónde está el parqueadero G1-03? (11),cm6
+A qué zona pertenece G1-12? (12),cm6
+Ubicación del parqueo G1-08 (13),cm6
+En qué zona está G1-10? (14),cm6
+Dime la franja del G1-07 (15),cm6
+¿Dónde está el parqueadero G1-03? (16),cm6
+A qué zona pertenece G1-12? (17),cm6
+Ubicación del parqueo G1-08 (18),cm6
+En qué zona está G1-10? (19),cm6
+Dime la franja del G1-07 (20),cm6
+"""Hola"," me ayudas con parqueos? (1)"",cm7"
+"""Buenos días"," necesito ayuda (2)"",cm7"
+"""Buenas tardes"," me puedes asistir? (3)"",cm7"
+Hola asistente (4),cm7
+"""Hola"," qué puedes hacer? (5)"",cm7"
+"""Hola"," me ayudas con parqueos? (6)"",cm7"
+"""Buenos días"," necesito ayuda (7)"",cm7"
+"""Buenas tardes"," me puedes asistir? (8)"",cm7"
+Hola asistente (9),cm7
+"""Hola"," qué puedes hacer? (10)"",cm7"
+"""Hola"," me ayudas con parqueos? (11)"",cm7"
+"""Buenos días"," necesito ayuda (12)"",cm7"
+"""Buenas tardes"," me puedes asistir? (13)"",cm7"
+Hola asistente (14),cm7
+"""Hola"," qué puedes hacer? (15)"",cm7"
+"""Hola"," me ayudas con parqueos? (16)"",cm7"
+"""Buenos días"," necesito ayuda (17)"",cm7"
+"""Buenas tardes"," me puedes asistir? (18)"",cm7"
+Hola asistente (19),cm7
+"""Hola"," qué puedes hacer? (20)"",cm7"
+Qué puedes hacer? (1),cm8
+Qué funciones tienes? (2),cm8
+Dame un resumen de tus servicios (3),cm8
+Ayuda con los comandos disponibles (4),cm8
+Cómo puedes asistirme? (5),cm8
+Qué puedes hacer? (6),cm8
+Qué funciones tienes? (7),cm8
+Dame un resumen de tus servicios (8),cm8
+Ayuda con los comandos disponibles (9),cm8
+Cómo puedes asistirme? (10),cm8
+Qué puedes hacer? (11),cm8
+Qué funciones tienes? (12),cm8
+Dame un resumen de tus servicios (13),cm8
+Ayuda con los comandos disponibles (14),cm8
+Cómo puedes asistirme? (15),cm8
+Qué puedes hacer? (16),cm8
+Qué funciones tienes? (17),cm8
+Dame un resumen de tus servicios (18),cm8
+Ayuda con los comandos disponibles (19),cm8
+Cómo puedes asistirme? (20),cm8
+Pájaro en bicicleta lunar (1),cm9
+abracadabra estacionamiento mágico (2),cm9
+salta salta sin sentido (3),cm9
+viene viene pero no sé qué (4),cm9
+ruido sin lógica en mi texto (5),cm9
+Pájaro en bicicleta lunar (6),cm9
+abracadabra estacionamiento mágico (7),cm9
+salta salta sin sentido (8),cm9
+viene viene pero no sé qué (9),cm9
+ruido sin lógica en mi texto (10),cm9
+Pájaro en bicicleta lunar (11),cm9
+abracadabra estacionamiento mágico (12),cm9
+salta salta sin sentido (13),cm9
+viene viene pero no sé qué (14),cm9
+ruido sin lógica en mi texto (15),cm9
+Pájaro en bicicleta lunar (16),cm9
+abracadabra estacionamiento mágico (17),cm9
+salta salta sin sentido (18),cm9
+viene viene pero no sé qué (19),cm9
+ruido sin lógica en mi texto (20),cm9
+Qué franjas hay en la zona G? (1),cm10
+Muéstrame las franjas de la zona B (2),cm10
+Lista de franjas en zona H (3),cm10
+Qué líneas tiene la zona D? (4),cm10
+Cuáles son las secciones de la zona C? (5),cm10
+Qué franjas hay en la zona G? (6),cm10
+Muéstrame las franjas de la zona B (7),cm10
+Lista de franjas en zona H (8),cm10
+Qué líneas tiene la zona D? (9),cm10
+Cuáles son las secciones de la zona C? (10),cm10
+Qué franjas hay en la zona G? (11),cm10
+Muéstrame las franjas de la zona B (12),cm10
+Lista de franjas en zona H (13),cm10
+Qué líneas tiene la zona D? (14),cm10
+Cuáles son las secciones de la zona C? (15),cm10
+Qué franjas hay en la zona G? (16),cm10
+Muéstrame las franjas de la zona B (17),cm10
+Lista de franjas en zona H (18),cm10
+Qué líneas tiene la zona D? (19),cm10
+Cuáles son las secciones de la zona C? (20),cm10
+Parqueos en zona G franja 1? (1),cm11
+Qué parqueaderos hay en zona C franja 2? (2),cm11
+Franja 3 de la zona B tiene parqueo? (3),cm11
+Zona D franja 1 muestra lugares (4),cm11
+Quiero estacionar en la zona H franja 2 (5),cm11
+Parqueos en zona G franja 1? (6),cm11
+Qué parqueaderos hay en zona C franja 2? (7),cm11
+Franja 3 de la zona B tiene parqueo? (8),cm11
+Zona D franja 1 muestra lugares (9),cm11
+Quiero estacionar en la zona H franja 2 (10),cm11
+Parqueos en zona G franja 1? (11),cm11
+Qué parqueaderos hay en zona C franja 2? (12),cm11
+Franja 3 de la zona B tiene parqueo? (13),cm11
+Zona D franja 1 muestra lugares (14),cm11
+Quiero estacionar en la zona H franja 2 (15),cm11
+Parqueos en zona G franja 1? (16),cm11
+Qué parqueaderos hay en zona C franja 2? (17),cm11
+Franja 3 de la zona B tiene parqueo? (18),cm11
+Zona D franja 1 muestra lugares (19),cm11
+Quiero estacionar en la zona H franja 2,cm11
