@@ -2,9 +2,7 @@ import psycopg2
 from dotenv import load_dotenv
 import os
 
-# Load environment variables
 load_dotenv()
-
 
 def get_pg_connection():
     conn = psycopg2.connect(

@@ -6,7 +6,7 @@ import torch
 import json
 import os
 from db.db import get_pg_connection
-import re  # Global import added here
+import re
 
 load_dotenv()
 

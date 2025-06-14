@@ -10,7 +10,6 @@ from transformers import (
     DataCollatorWithPadding
 )
 
-# 1. Label encoder personalizado
 class CustomLabelEncoder:
     def __init__(self):
         self.label2id = {}
@@ -29,17 +28,14 @@ class CustomLabelEncoder:
     def get_mappings(self):
         return self.label2id, self.id2label
 
-# 2. Rutas
 script_dir = os.path.dirname(os.path.abspath(__file__))
 dataset_path = os.path.join(script_dir, "dataset.csv")
 
 if not os.path.exists(dataset_path):
     raise FileNotFoundError(f"Dataset not found at {dataset_path}")
 
-# 3. Cargar dataset
 dataset = load_dataset("csv", data_files=dataset_path)["train"]
 
-# 4. Codificar etiquetas
 label_encoder = CustomLabelEncoder()
 all_labels = [ex["label"] for ex in dataset]
 label_encoder.fit(all_labels)
@@ -53,7 +49,6 @@ os.makedirs(os.path.join(script_dir, "../model"), exist_ok=True)
 with open(os.path.join(script_dir, "../model/label2id.json"), "w") as f:
     json.dump(label2id, f)
 
-# 5. Tokenizar textos
 tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-cased")
 
 def tokenize(example):
@@ -61,7 +56,6 @@ def tokenize(example):
 
 tokenized_dataset = dataset.map(tokenize)
 
-# 6. Modelo
 model = AutoModelForSequenceClassification.from_pretrained(
     "bert-base-multilingual-cased",
     num_labels=len(label2id),
@@ -69,7 +63,6 @@ model = AutoModelForSequenceClassification.from_pretrained(
     label2id=label2id
 )
 
-# 7. Configuración de entrenamiento
 args = TrainingArguments(
     output_dir=os.path.join(script_dir, "../model"),
     per_device_train_batch_size=8,
@@ -79,13 +72,11 @@ args = TrainingArguments(
     logging_steps=10
 )
 
-# 8. Métricas
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
     predictions = np.argmax(logits, axis=-1)
     return {"accuracy": (predictions == labels).mean()}
 
-# 9. Entrenador
 trainer = Trainer(
     model=model,
     args=args,
@@ -95,7 +86,6 @@ trainer = Trainer(
     data_collator=DataCollatorWithPadding(tokenizer=tokenizer)
 )
 
-# 10. Entrenar y guardar
 trainer.train()
 trainer.save_model(os.path.join(script_dir, "../model"))
 tokenizer.save_pretrained(os.path.join(script_dir, "../model"))

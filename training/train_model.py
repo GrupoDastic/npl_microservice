@@ -23,10 +23,10 @@ class CustomLabelEncoder:
         return self.label2id, self.id2label
 
 
-script_dir = os.path.dirname(os.path.abspath(__file__))          # /training
-dataset_path = os.path.join(script_dir, "dataset.csv")           # /training/dataset.csv
-model_dir = os.path.join(script_dir, "..", "model")              # /model (1 nivel arriba)
-log_dir = os.path.join(script_dir, "..", "logs")                 # /logs
+script_dir = os.path.dirname(os.path.abspath(__file__))
+dataset_path = os.path.join(script_dir, "dataset.csv")
+model_dir = os.path.join(script_dir, "..", "model")
+log_dir = os.path.join(script_dir, "..", "logs")
 
 if not os.path.exists(dataset_path):
     raise FileNotFoundError(f"Dataset not found at {dataset_path}")
@@ -70,7 +70,6 @@ tokenized_dataset = dataset.filter(
 )
 tokenized_dataset = tokenized_dataset.map(tokenize, batched=True)
 
-# 8. Prepare model and training
 model = AutoModelForSequenceClassification.from_pretrained(
     "bert-base-multilingual-cased",
     num_labels=len(label2id),
@@ -107,7 +106,6 @@ trainer = Trainer(
     data_collator=data_collator
 )
 
-# 9. Train and save
 trainer.train()
 trainer.save_model(model_dir)
 tokenizer.save_pretrained(model_dir)
