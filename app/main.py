@@ -12,7 +12,6 @@ import json
 import os
 import re
 
-# FIX: import que funciona tanto con "uvicorn app.main:app" como ejecucion directa
 try:
     from app.db.db import get_pg_connection
 except ImportError:
@@ -25,16 +24,19 @@ except ImportError:
 
 load_dotenv()
 
-CONFIDENCE_THRESHOLD = 0.55
+CONFIDENCE_THRESHOLD = 0.7
 
 base_path = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(base_path, "..", "model")
 
-# Cargar modelo de forma robusta (no crashea la app si el modelo no existe)
 model = None
 tokenizer = None
 id2label = None
 label2id = None
+
+last_results = []        # para evitar repetir parqueaderos
+last_response_text = ""  # para cm3 (repetir respuesta)
+MAX_HISTORY = 20
 
 try:
     model = AutoModelForSequenceClassification.from_pretrained(model_path, local_files_only=True)
@@ -98,6 +100,7 @@ def health():
 
 @app.post("/predict")
 def predict(query: Query):
+    global last_response_text
     if model is None:
         return {"respuesta": "El modelo no esta cargado. Ejecuta primero: python training/train_model.py"}
 
@@ -107,27 +110,55 @@ def predict(query: Query):
     command, confidence = classify(query.text)
 
     if command == "cm1":
-        rows = execute_query("""
-                             SELECT z.identifier, s.strip_identifier, ps.identifier
-                             FROM parking_spaces ps
-                                      JOIN strips s ON s.zone_id = ps.zone_id AND s.strip_identifier = ps.strip_identifier
-                                      JOIN zones z ON z.id = ps.zone_id
-                             WHERE ps.status = 'free'
-                             ORDER BY CASE z.identifier
-                                          WHEN 'B' THEN 1 WHEN 'D' THEN 2 WHEN 'C' THEN 3
-                                          WHEN 'H' THEN 4 WHEN 'E' THEN 5 WHEN 'G' THEN 6
-                                          ELSE 7 END,
-                                      ps.last_updated DESC
-                             LIMIT 3;
-                             """)
+        global last_results
+        exclude_clause = ""
+        params = ()
+
+        if last_results:
+            placeholders = ",".join(["%s"] * len(last_results))
+            exclude_clause = f"AND ps.identifier NOT IN ({placeholders})"
+            params = tuple(last_results)
+
+        rows = execute_query(f"""
+                SELECT z.identifier, s.strip_identifier, ps.identifier
+                FROM parking_spaces ps
+                JOIN strips s ON s.zone_id = ps.zone_id AND s.strip_identifier = ps.strip_identifier
+                JOIN zones z ON z.id = ps.zone_id
+                WHERE ps.status = 'free'
+                {exclude_clause}
+                ORDER BY RANDOM()
+                LIMIT 3;
+            """, params)
+
+        # fallback
         if not rows:
-            return {"respuesta": "Lo siento, no hay parqueaderos disponibles en este momento."}
+            rows = execute_query("""
+                                 SELECT z.identifier, s.strip_identifier, ps.identifier
+                                 FROM parking_spaces ps
+                                          JOIN strips s ON s.zone_id = ps.zone_id AND s.strip_identifier = ps.strip_identifier
+                                          JOIN zones z ON z.id = ps.zone_id
+                                 WHERE ps.status = 'free'
+                                 ORDER BY RANDOM()
+                                 LIMIT 3;
+                                 """)
+
+        if not rows:
+            last_response_text = "No hay parqueaderos disponibles"
+            return {"respuesta": last_response_text}
+
         zonas = {}
         for zona, franja, parqueadero in rows:
             key = f"zona {zona}, franja {franja}"
             zonas.setdefault(key, []).append(parqueadero)
-        frases = [f"{ubicacion}: {', '.join(parqueos)}" for ubicacion, parqueos in zonas.items()]
-        return {"respuesta": "Existen parqueaderos disponibles en:\n" + "\n".join(frases)}
+
+        frases = [f"{k}: {', '.join(v)}" for k, v in zonas.items()]
+        respuesta = "Parqueaderos disponibles:\n" + "\n".join(frases)
+
+        # guardar memoria
+        last_results = [r[2] for r in rows]
+        last_response_text = respuesta
+
+        return {"respuesta": respuesta}
 
     if command == "cm2":
         rows = execute_query("""
@@ -142,7 +173,13 @@ def predict(query: Query):
         return {"respuesta": "No hay zonas con parqueaderos disponibles actualmente."}
 
     if command == "cm3":
-        return {"respuesta": "Esta funcion aun no esta implementada para repetir la ultima informacion."}
+
+        if not last_response_text:
+            return {"respuesta": "Primero haz una consulta"}
+
+        return {
+            "respuesta": f"Te repito:\n\n{last_response_text}"
+        }
 
     if command == "cm4":
         match = re.search(r"([A-Za-z]\d+-\d+)", query.text)
